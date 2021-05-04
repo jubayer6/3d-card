@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>3D card</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box box1">
+            <img src="ironman.png" class="carector" alt="">
+            <div class="wav"></div>
+            <img src="ironman-logo.png" class="logo" alt="">
+            <button type="button">Watch Now</button>
+        </div>
+
+        <div class="box box2">
+            <img src="thor.png" class="carector" alt="">
+            <div class="wav"></div>
+            <img src="thor-logo.png" class="logo" alt="">
+            <button type="button">Watch Now</button>
+        </div>
+
+        <div class="box box3">
+            <img src="venom.png" class="carector" alt="">
+            <div class="wav"></div>
+            <img src="venom-logo.png" class="logo" alt="">
+            <button type="button">Watch Now</button>
+        </div>
+    </div>
+
+    <script src="vanilla-tilt.min.js"></script>
+
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+		max: 25,
+		speed: 400
+	});
+    </script>
+
+</body>
+</html>

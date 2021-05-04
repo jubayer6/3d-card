@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #bb3127;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.container .box{
+    width: 320px;
+    height: 450px;
+    position: relative;
+    transform-style: preserve-3d;
+    background: #333;
+    margin: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 0px #000000;
+}
+
+.container .box::before{
+    content: 'MARVEL';
+    position: absolute;
+    top: 20px;
+    left: 75px;
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-style: italic;
+    color: #fff;
+    opacity: 0.4;
+    transform-style: preserve-3d;
+    font-family: 'Rancho', cursive;
+}
+
+.container .box button{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 600;
+    background: #131313;
+    color: #fff;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    box-shadow: 0px 5px 15px 0px #000000;
+    opacity: 0;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.container .box:hover button{
+    opacity: 1;
+    bottom: 20px;
+}
+
+.container .box .wav{
+    position: absolute;
+    top: 46%;
+    left: 62%;
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    border-radius: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,0px);
+    border-radius: 65% 35% 50% 50% / 44% 24% 76% 56%;
+}
+
+.container .box .carector{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 11;
+    transform: translate3d(-50%,-50%,0px);
+    max-width: 300px;
+}
+
+.container .box .carector:nth-child(1){
+    max-width: 250px;
+    margin-top: 1rem;
+}
+
+.container .box .logo{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-10%,50px);
+    max-width: 150px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.container .box:hover .logo{
+    opacity: 1;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,50px);
+}
+
+.container .box1,
+.container .box1 button{
+    background: #670305;
+}
+
+.container .box1 .wav{
+    background: #a31719;
+}
+
+.container .box2,
+.container .box2 button{
+    background: #0a4788;
+}
+
+.container .box2 .wav{
+    background: #0e63bd;
+}
+
+.container .box3,
+.container .box3 button{
+    background: #232323;
+}
+
+.container .box3 .wav{
+    background: #131313;
+}

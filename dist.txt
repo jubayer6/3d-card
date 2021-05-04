@@ -1,0 +1,15 @@
+Body background: #bb3127
+
+Google font HTML:<link rel="preconnect" href="https://fonts.gstatic.com">
+                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet"> 
+
+Font family: 'Rancho', cursive;
+             'Poppins'
+
+Box1 background: #670305, Box1 wav background: #a31719
+Box2 background: #0a4788, Box2 wav background: #0e63bd
+Box3 background: #232323, Box3 wav background: #131313
+Box box-shadow: 0px 5px 15px 0px #000000;
+button box-shadow: 0px 5px 15px 0px #000000;
+
+Wav border-radius: 65% 35% 50% 50% / 44% 24% 76% 56%
